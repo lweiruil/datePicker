@@ -5,7 +5,7 @@ datePicker with data
 
 ### use case
 
-``
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,4 +50,4 @@ datePicker with data
 	</script>
 </body>
 </html>
-``
+```
