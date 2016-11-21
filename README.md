@@ -12,9 +12,9 @@ datePicker with data
 	<meta charset="UTF-8">
 	<meta name="viewport" content=" width=device-width,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>日历控件</title>
-	<link rel="stylesheet" href="css/lDate.css">
-	<script src="js/jquery-3.1.0.js"></script>
-	<script src="js/lDate.js"></script>
+	<link rel="stylesheet" href="css/datePicker.css">
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/datePicker.js"></script>
 </head>
 <body>
 	<script>
