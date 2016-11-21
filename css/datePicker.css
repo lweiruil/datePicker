@@ -1,0 +1,196 @@
+@charset"utf-8";
+
+.l_plugin_calendar_calendar{
+	/* line-height: 2rem; */
+	font-size: 16px;
+	position: relative;
+	background: #fff;
+	max-width: 380px;
+	margin: auto;
+}
+.l_plugin_calendar_calendar a{
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.l_plugin_calendar_calendar ul{
+	margin: 0;
+	padding: 0;
+	border: 1px solid #ddd;
+	border-bottom: none;
+}
+.l_plugin_calendar_calendar ul:last-child{
+	border-bottom: 1px solid #ddd;
+}
+.l_plugin_calendar_calendar li{
+	list-style: none;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	text-align: center;
+	border-right: 1px solid #ddd;
+}
+.l_plugin_calendar_calendar li:last-child{
+	border-right: none;
+}
+.l_plugin_calendar_days,.l_plugin_calendar_date_row{
+	display: -webkit-flex;
+	display: flex;
+}
+.l_plugin_calendar_calendar ul.l_plugin_calendar_days li{
+	font-weight: bold;
+	line-height: 2em;
+}
+.l_plugin_calendar_calendar a{
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+.l_plugin_calendar_calendar a.l_disabled{
+	color: rgba(0, 0, 0, 0.2);
+}
+.l_plugin_calendar_days span,.l_plugin_calendar_date span{
+	display: block;
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+}
+.l_plugin_calendar_date .l_plugin_calendar_date_gray span{
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.l_plugin_calendar_date_row .l_plugin_calendar_date_data{
+	color: #C8000A;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+/* 周末 */
+.l_plugin_calendar_calendar .l_plugin_calendar_weekend{
+	background: #d1f7d1;
+}
+
+.l_plugin_calendar_date_row .l_plugin_calendar_selected{
+	background: #C8000A;
+}
+
+.l_plugin_calendar_date_row .l_plugin_calendar_today{
+	background: #a99bde;
+}
+.l_plugin_calendar_date_row .l_plugin_calendar_today span,.l_plugin_calendar_date_row .l_plugin_calendar_selected span{
+	color: #fff;
+}
+
+.l_plugin_calendar_date_row{
+	line-height: 2.4em;
+}
+.l_plugin_calendar_date_row .l_plugin_calendar_has_data{
+	line-height: 1.2em;
+}
+/* .l_plugin_calendar_date_gray.l_plugin_calendar_weekend{
+	background: #fff;
+} */
+
+
+.l_plugin_calendar_calendar .l_plugin_calendar_year_month{
+	font-size: 18px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+.l_plugin_calendar_year_month{
+	display: flex;
+}
+.l_plugin_calendar_year_month li{
+	flex: 1;
+	border: none;
+	line-height: 30px;
+}
+.l_plugin_calendar_year_month li.l_plugin_calendar_year_month_input{
+	flex: 2;
+	font-size: 0;
+	line-height: 0;
+}
+.l_plugin_calendar_year_month li.l_plugin_calendar_year_month_input input,.l_plugin_calendar_year_month li.l_plugin_calendar_year_month_input span{
+	font-size: 16px;
+	line-height: 30px;
+}
+.l_plugin_calendar_year_month li.l_plugin_calendar_year_month_input input{
+	background: #eee;
+	border: none;
+	width: 50px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-right: 5px;
+	outline: none;
+}
+
+.l_plugin_calendar_calendar_body{
+	position: relative;
+}
+/* 选择年份 */
+.l_plugin_calendar_year_selection,.l_plugin_calendar_month_selection{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 10px;
+	display: none;
+}
+.l_plugin_calendar_year_selection ul,.l_plugin_calendar_month_selection ul{
+	border: none;
+}
+/* .l_plugin_calendar_year_selection ul:after, .l_plugin_calendar_month_selection ul:after{
+	content: " ";
+	display: block;
+	clear: both;
+} */
+.l_plugin_calendar_year_selection li,.l_plugin_calendar_month_selection li{
+	text-align: center;
+	width: 25%;
+	float: left;
+	font-size: 16px;
+	box-sizing: border-box;
+	border: none;
+}
+.l_plugin_calendar_year_selection li a,.l_plugin_calendar_month_selection li a{
+	line-height: 2em;
+}
+.l_plugin_calendar_btns{
+	position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    font-size: 0;
+}
+.l_plugin_calendar_btns ul{
+	border: none!important;
+}
+.l_plugin_calendar_btns li{
+	width: 33.333333%;
+	padding: 0 10px;
+}
+.l_plugin_calendar_btn{
+	background: #fff;
+	border: 1px solid #ddd;
+	outline: none;
+	font-size: 14px;
+	line-height: 30px;
+	width: 100%;
+}
+.l_plugin_calendar_btn.l_disabled{
+	color: rgba(0,0,0,0.2);
+}
+/* .l_plugin_calendar_month_selection{
+	display: block;
+} */
+.l_plugin_calendar_month_selection li{
+	width: 33.3333333%;
+}
+.l_plugin_calendar_close_month{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	width: 30%;
+}
